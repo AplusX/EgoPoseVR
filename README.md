@@ -7,9 +7,10 @@
     <h2> <a href="https://aplusx.github.io/EgoPoseVRWeb/">EgoPoseVR: Spatiotemporal Multi-Modal Reasoning for Egocentric Full-Body Pose in Virtual Reality</a></h2>
 
 <p align="center">
-  <a href="https://aplusx.github.io/EgoPoseVRWeb/">Project Page</a> •
-  <a href="https://arxiv.org/abs/2602.05590">Arxiv Paper</a> •
-  <a href="#-citation">Citation
+  <a href="https://aplusx.github.io/EgoPoseVRWeb/">🌐 Project Page</a> •
+  <a href="https://arxiv.org/abs/2602.05590">📄 Arxiv Paper</a> •
+  <a href="https://huggingface.co/datasets/AplusX/EgoPoseVR">🤗 Dataset</a> •
+  <a href="#-citation">📚 Citation</a>
 </p>
 
 </div>
@@ -90,7 +91,7 @@ Each `.npz` file includes the following information:
 ### Directory Structure
 
 ```text
-EgomotionData/
+EgoPoseVR_Dataset/
 ├── Scene0/
 ├── Scene1/
 ├── Scene2/
