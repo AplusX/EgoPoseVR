@@ -32,7 +32,7 @@ We present EgoPoseVR, an end-to-end framework for accurate egocentric full-body 
 
 ## 🚩 News
 
-- [2026/04/11] 🔥🔥 Release **EgoPoseVR Dataset** on [🤗 Hugging Face](https://huggingface.co/datasets/AplusX/EgoPoseVR)
+- [2026/04/12] 🔥🔥 Release **EgoPoseVR Dataset** on [🤗 Hugging Face](https://huggingface.co/datasets/AplusX/EgoPoseVR)
 - [2026/04/11] Upload and init project
 
 ## 🤗 Dataset (~362 GB)
