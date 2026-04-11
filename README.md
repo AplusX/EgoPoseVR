@@ -79,13 +79,13 @@ Each `.npz` file includes the following information:
 | `pred_2d` | Predicted 2D joint positions | `(T, 22, 2)` |
 | `pred_3d` | Predicted 3D joint positions | `(T, 22, 3)` |
 
-### Dataset Split
+<!-- ### Dataset Split
 
 | Split | Number of Clips |
 |---|---:|
 | Training | 14,702 |
 | Validation | 1,827 |
-| Test | 1,706 |
+| Test | 1,706 | -->
 
 ### Directory Structure
 
@@ -104,7 +104,7 @@ EgomotionData/
 ├── val_npz_paths.txt
 ├── test_npz_paths.txt
 └── all_npz_paths.txt
-
+```
 
 ## 📖 Citation
 
