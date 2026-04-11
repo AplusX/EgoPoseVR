@@ -64,8 +64,8 @@ Each `.npz` file includes the following information:
 | `hmd_position_global_full_gt_list` | Global HMD tracking signals | `(T, 54)` |
 | `head_global_trans_list` | Global head transformation matrices | `(T, 4, 4)` |
 | `body_parms_list` | SMPL body parameters (`root_orient`, `pose_body`, `trans`) | `dict` |
-| `pred_2d` | Predicted 2D joint positions predicted by the RGB-D module| `(T, 22, 2)` |
-| `pred_3d` | Predicted 3D joint positions predicted by the RGB-D module| `(T, 22, 3)` |
+| `pred_2d` | Predicted 2D joint positions from the RGB-D module| `(T, 22, 2)` |
+| `pred_3d` | Predicted 3D joint positions from the RGB-D module| `(T, 22, 3)` |
 
 <!-- ### Dataset Split
 
