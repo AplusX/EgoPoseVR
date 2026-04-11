@@ -1,5 +1,5 @@
 <div align= "center">
-    <h1> Official Repo for EgoPoseVR </h1>
+    <h1> Official Repo for EgoPoseVR (IEEE TVCG / IEEE VR 2026) </h1>
 
 </div>
 
