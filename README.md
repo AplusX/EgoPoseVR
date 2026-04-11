@@ -50,7 +50,7 @@ In total, **2,344 motion sequences** are extracted. Each sequence folder corresp
 
 Each `.npz` file includes the following information:
 
-- **RGB-D input images** with shape `(100, 4, 256, 320)`
+- **RGB-D input images** with shape `(100, 4, 256, 320)`, rendered by UE5
 - **Ground-truth 2D joint positions** for 22 joints
 - **Ground-truth 3D joint positions** for 22 joints
 - **Predicted 2D joint positions**
