@@ -39,7 +39,7 @@ We present EgoPoseVR, an end-to-end framework for accurate egocentric full-body 
 
 This dataset is designed for egocentric full-body motion analysis in virtual scenes. It contains paired RGB-D observations, pose annotations, HMD tracking signals, and SMPL body parameters.
 
-[🎬 Dataset Video](./assets/images/Dataset.mp4)
+![🎬 Dataset Video](./assets/videos/Dataset.gif)
 
 ### Data Sources
 
