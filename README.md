@@ -31,8 +31,79 @@ We present EgoPoseVR, an end-to-end framework for accurate egocentric full-body 
 
 ## 🚩 News
 
-- [2025/04/11] 🔥🔥 Release **EgoPoseVR Dataset** on 
+- [2026/04/11] 🔥🔥 Release **EgoPoseVR Dataset** on 
 - [2026/04/11] Upload and init project
+
+## 📦 Dataset
+
+This dataset is designed for egocentric full-body motion analysis in virtual scenes. It contains paired RGB-D observations, pose annotations, HMD tracking signals, and SMPL body parameters.
+
+### Overview
+
+- **2,344 motion sequences**
+- **18,235 `.npz` clips**
+
+Each `.npz` file contains **100 consecutive frames** and stores multimodal data for motion analysis and reconstruction.
+
+### Data Sources
+
+The motion data is derived from the [AMASS](https://amass.is.tue.mpg.de/) dataset.  
+In total, **2,344 motion sequences** are extracted. Each sequence folder corresponds to one continuous motion sequence, and each `.npz` file contains a 100-frame clip sampled from that sequence.
+
+### Data Contents
+
+Each `.npz` file includes the following information:
+
+- **RGB-D input images** with shape `(100, 4, 256, 320)`
+- **Ground-truth 2D joint positions** for 22 joints
+- **Ground-truth 3D joint positions** for 22 joints
+- **Predicted 2D joint positions**
+- **Predicted 3D joint positions**
+- **Pelvis position and rotation** in camera coordinates
+- **HMD tracking data**
+- **Head transformation matrices**
+- **SMPL body parameters**
+
+### Data Fields
+
+| Field | Description | Shape |
+|---|---|---|
+| `input_rgbd` | Input RGB-D image sequence | `(T, 4, H, W)` |
+| `gt_joints_relativeCam_2Dpos` | Ground-truth 2D joint positions projected onto the camera image plane | `(T, 22, 2)` |
+| `gt_joints_relativePelvis_3Dpos` | Ground-truth 3D joint positions relative to the pelvis | `(T, 22, 3)` |
+| `gt_pelvis_camera_3Dpos` | Ground-truth pelvis position in camera coordinates | `(T, 3)` |
+| `gt_pelvis_camera_4Drot` | Ground-truth pelvis rotation in camera coordinates | `(T, 4)` |
+| `hmd_position_global_full_gt_list` | Global HMD tracking signals | `(T, 54)` |
+| `head_global_trans_list` | Global head transformation matrices | `(T, 4, 4)` |
+| `body_parms_list` | SMPL body parameters (`root_orient`, `pose_body`, `trans`) | `dict` |
+| `pred_2d` | Predicted 2D joint positions | `(T, 22, 2)` |
+| `pred_3d` | Predicted 3D joint positions | `(T, 22, 3)` |
+
+### Dataset Split
+
+| Split | Number of Clips |
+|---|---:|
+| Training | 14,702 |
+| Validation | 1,827 |
+| Test | 1,706 |
+
+### Directory Structure
+
+```text
+EgomotionData/
+├── Scene0/
+├── Scene1/
+├── Scene2/
+├── Scene3/
+├── Scene4/
+├── Scene5/
+├── Scene6/
+│   └── AllDataPath_{Source}_{split}_{id}/
+│       └── {clip_id}.npz
+├── train_npz_paths.txt
+├── val_npz_paths.txt
+├── test_npz_paths.txt
+└── all_npz_paths.txt
 
 
 ## 📖 Citation
