@@ -35,21 +35,16 @@ We present EgoPoseVR, an end-to-end framework for accurate egocentric full-body 
 - [2026/04/11] 🔥🔥 Release **EgoPoseVR Dataset** on 
 - [2026/04/11] Upload and init project
 
-## 📦 Dataset
+## 🤗 [Dataset](https://huggingface.co/datasets/AplusX/EgoPoseVR) (~362 GB)
 
 This dataset is designed for egocentric full-body motion analysis in virtual scenes. It contains paired RGB-D observations, pose annotations, HMD tracking signals, and SMPL body parameters.
 
-### Overview
-
-- **2,344 motion sequences**
-- **18,235 `.npz` clips**
-
-Each `.npz` file contains **100 consecutive frames** and stores multimodal data for motion analysis and reconstruction.
+[🎬 Dataset Video](./assets/images/Dataset.mp4)
 
 ### Data Sources
 
 The motion data is derived from the [AMASS](https://amass.is.tue.mpg.de/) dataset.  
-In total, **2,344 motion sequences** are extracted. Each sequence folder corresponds to one continuous motion sequence, and each `.npz` file contains a 100-frame clip sampled from that sequence.
+In total, **2,344 motion sequences** are extracted. Each sequence folder corresponds to one continuous motion sequence, and each `.npz` file contains a 100-frame clip sampled from that sequence. 
 
 ### Data Contents
 
