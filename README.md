@@ -54,18 +54,6 @@ In total, **2,344 motion sequences** are extracted. Each sequence folder corresp
 
 Each `.npz` file includes the following information:
 
-- **RGB-D input images** with shape `(100, 4, 256, 320)`, rendered by UE5
-- **Ground-truth 2D joint positions** for 22 joints
-- **Ground-truth 3D joint positions** for 22 joints
-- **Predicted 2D joint positions**
-- **Predicted 3D joint positions**
-- **Pelvis position and rotation** in camera coordinates
-- **HMD tracking data**
-- **Head transformation matrices**
-- **SMPL body parameters**
-
-### Data Fields
-
 | Field | Description | Shape |
 |---|---|---|
 | `input_rgbd` | Input RGB-D image sequence | `(T, 4, H, W)` |
@@ -76,8 +64,8 @@ Each `.npz` file includes the following information:
 | `hmd_position_global_full_gt_list` | Global HMD tracking signals | `(T, 54)` |
 | `head_global_trans_list` | Global head transformation matrices | `(T, 4, 4)` |
 | `body_parms_list` | SMPL body parameters (`root_orient`, `pose_body`, `trans`) | `dict` |
-| `pred_2d` | Predicted 2D joint positions | `(T, 22, 2)` |
-| `pred_3d` | Predicted 3D joint positions | `(T, 22, 3)` |
+| `pred_2d` | Predicted 2D joint positions predicted by the RGB-D module| `(T, 22, 2)` |
+| `pred_3d` | Predicted 3D joint positions predicted by the RGB-D module| `(T, 22, 3)` |
 
 <!-- ### Dataset Split
 
