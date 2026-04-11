@@ -41,7 +41,7 @@ This dataset is designed for egocentric full-body motion analysis in virtual sce
 
 <p align="center">
   <strong>🎬 Dataset Video</strong><br>
-  <img src="./assets/videos/Dataset.gif" alt="Dataset Video" width="800">
+  <img src="./assets/videos/Dataset.gif" alt="Dataset Video" width="500">
 </p>
 
 ### Data Sources
