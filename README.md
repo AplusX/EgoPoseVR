@@ -35,7 +35,7 @@ We present EgoPoseVR, an end-to-end framework for accurate egocentric full-body 
 - [2026/04/12] 🔥🔥 Release **EgoPoseVR Dataset** on [🤗 Hugging Face](https://huggingface.co/datasets/AplusX/EgoPoseVR)
 - [2026/04/11] Upload and init project
 
-## 🤗 Dataset (~362 GB)
+## 🤗 Dataset
 
 This dataset is designed for egocentric full-body motion analysis in virtual scenes. It contains paired RGB-D observations, pose annotations, HMD tracking signals, and SMPL body parameters. [Download here](https://huggingface.co/datasets/AplusX/EgoPoseVR).
 
