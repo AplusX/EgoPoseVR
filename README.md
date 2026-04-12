@@ -75,7 +75,7 @@ Each `.npz` file includes the following information:
 | Validation | 1,827 |
 | Test | 1,706 | -->
 
-### Directory Structure
+<!-- ### Directory Structure
 
 ```text
 EgoPoseVR_Dataset/
@@ -92,7 +92,7 @@ EgoPoseVR_Dataset/
 ├── val_npz_paths.txt
 ├── test_npz_paths.txt
 └── all_npz_paths.txt
-```
+``` -->
 
 ## 📖 Citation
 
