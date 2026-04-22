@@ -106,3 +106,6 @@ If you find our code or paper helps, please consider citing:
   year={2026}
 }
 ```
+<p align="center">
+  <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FAplusX%2FEgoPoseVR&icon=github&color=%2366ccff&message=&style=flat-square" alt="">
+</p>
