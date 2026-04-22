@@ -132,6 +132,34 @@ python run.py test --config configs/heatmap2d_config.yaml --ckpt_path ckpt/your_
 python run.py test --config configs/pose3d_config.yaml --ckpt_path ckpt/your_poseckpt_file
 ```
 
+
+
+## Body Model Files
+
+Download SMPL+H mode from [SMPL+H](https://mano.is.tue.mpg.de/login.php) (choose Extended SMPL+H model used in AMASS project) and DMPL model from DMPL (choose DMPLs compatible with SMPL). 
+
+Place the downloaded files in the following structure:
+
+```text
+support_data/
+└── body_models/
+	├── smplh/
+	│   ├── female/model.npz
+	│   ├── male/model.npz
+	│   └── neutral/model.npz
+	└── dmpls/
+		├── female/model.npz
+		├── male/model.npz
+		└── neutral/model.npz
+```
+
+The pose estimation code currently reads:
+
+- `support_data/body_models/smplh/<gender>/model.npz`
+- `support_data/body_models/dmpls/<gender>/model.npz`
+
+If you only run the provided pose estimation pipeline, make sure at least the gender-specific `model.npz` files required by your run are present.
+
 ## Acknowledgements
 
 This codebase is partially inspired by the implementations of [AvatarPoser](https://github.com/eth-siplab/AvatarPoser) and [EgoPoseFormer](https://github.com/chenhongyiyang/egoposeformer).
