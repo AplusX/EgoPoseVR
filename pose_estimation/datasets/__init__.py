@@ -1,0 +1,2 @@
+from .egoposevr.egoposevr_heatmap import EgoPoseVRHeatmapDataset
+from .egoposevr.egoposevr_3dpose import EgoPoseVR3DPoseDataset
