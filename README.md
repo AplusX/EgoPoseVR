@@ -131,6 +131,9 @@ python run.py test --config configs/heatmap2d_config.yaml --ckpt_path ckpt/your_
 python run.py test --config configs/pose3d_config.yaml --ckpt_path ckpt/your_poseckpt_file
 ```
 
+## Acknowledgements
+
+This codebase is partially inspired by the implementations of [AvatarPoser](https://github.com/eth-siplab/AvatarPoser) and [EgoPoseFormer](https://github.com/chenhongyiyang/egoposeformer).
 
 
 ## 📖 Citation
