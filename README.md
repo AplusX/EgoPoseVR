@@ -35,6 +35,18 @@ We present EgoPoseVR, an end-to-end framework for accurate egocentric full-body 
 - [2026/04/12] 🔥🔥 Release **EgoPoseVR Dataset** on [🤗 Hugging Face](https://huggingface.co/datasets/AplusX/EgoPoseVR)
 - [2026/04/11] Upload and init project
 
+## ⚙️ Environment Setup
+
+```bash
+conda create -n egoposevr python=3.10 -y
+conda activate egoposevr
+
+pip install --upgrade pip setuptools wheel packaging
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu121
+pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.4.0/index.html
+pip install -r requirements.txt
+```
+
 ## 🤗 Dataset
 
 This dataset is designed for egocentric full-body motion analysis in virtual scenes. It contains paired RGB-D observations, pose annotations, HMD tracking signals, and SMPL body parameters. [Download here](https://huggingface.co/datasets/AplusX/EgoPoseVR).
@@ -67,6 +79,8 @@ Each `.npz` file includes the following information:
 | `pred_2d` | Predicted 2D joint positions from the RGB-D module| `(T, 22, 2)` |
 | `pred_3d` | Predicted 3D joint positions from the RGB-D module| `(T, 22, 3)` |
 
+
+
 <!-- ### Dataset Split
 
 | Split | Number of Clips |
@@ -93,6 +107,31 @@ EgoPoseVR_Dataset/
 ├── test_npz_paths.txt
 └── all_npz_paths.txt
 ``` -->
+
+
+## 🚀 Training and Testing
+
+### Training (Heatmap Prediction)
+```bash
+python run.py fit --config configs/heatmap2d_config.yaml
+```
+
+### Training (Pose Estimation)
+```bash
+python run.py fit --config configs/pose3d_config.yaml
+```
+
+### Testing (Heatmap Prediction)
+```bash
+python run.py test --config configs/heatmap2d_config.yaml --ckpt_path ckpt/your_heatmapckpt_file
+```
+
+### Testing (Pose Estimation)
+```bash
+python run.py test --config configs/pose3d_config.yaml --ckpt_path ckpt/your_poseckpt_file
+```
+
+
 
 ## 📖 Citation
 
